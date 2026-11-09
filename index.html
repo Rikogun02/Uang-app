@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1613">
+<title>Keuangan Saya v1.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand">Keuangan <em>Saya</em></div>
+    <div class="meta2"><span id="today"></span><span class="ver">v1.1</span></div>
+  </header>
+  <main>
+    <section class="screen" id="s-out"></section>
+    <section class="screen hide" id="s-in"></section>
+    <section class="screen hide" id="s-rep"></section>
+    <section class="screen hide" id="s-adv"></section>
+  </main>
+  <nav class="bottom">
+    <button class="on" data-go="s-out"><span>−</span>Pengeluaran</button>
+    <button data-go="s-in"><span>+</span>Pemasukan</button>
+    <button data-go="s-rep"><span>▤</span>Laporan</button>
+    <button data-go="s-adv"><span>✦</span>Nasihat</button>
+  </nav>
+  <div id="toast" class="toast"></div>
+</div>
+<div id="printArea"></div>
+<script src="app.js"></script>
+</body>
+</html>
